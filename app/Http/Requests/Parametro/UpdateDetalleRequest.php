@@ -17,7 +17,7 @@ class UpdateDetalleRequest extends FormRequest
 			'idTipo' => [
 				'required',
 				'integer',
-				'exists:parametro.tipo,idTipo',
+				'exists:pgsql.parametro.tipo,idTipo',
 			],
 			'nombre' => [
 				'required',
