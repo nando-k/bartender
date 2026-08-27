@@ -17,7 +17,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'pgsql'),
+    'default' => env('DB_CONNECTION', 'sqlite'),
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ return [
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
             'prefix_indexes' => true,
-			'search_path' => ['seguridad','public','parametro','almacen','empleado'],
+			'search_path' => 'public',
             'sslmode' => env('DB_SSLMODE', 'prefer'),
         ],
 
