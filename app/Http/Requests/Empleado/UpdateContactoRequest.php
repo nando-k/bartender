@@ -17,7 +17,7 @@ class UpdateContactoRequest extends FormRequest
 			'idPersona' => [
 				'required',
 				'integer',
-				'exists:empleado.persona,idPersona',
+				'exists:pgsql.empleado.persona,idPersona',
 			],
 			'celular' => [
 				'nullable',

@@ -46,12 +46,12 @@ Route::prefix('seguridad')->group(function () {
 	*/
 
 	Route::apiResource(
-		'rolUsuarios',
+		'rol-usuarios',
 		RolUsuarioController::class
 	);
 
 	Route::post(
-		'rolUsuarios/{idRolUsuario}/restore',
+		'rol-usuarios/{idRolUsuario}/restore',
 		[RolUsuarioController::class, 'restore']
 	);
 });

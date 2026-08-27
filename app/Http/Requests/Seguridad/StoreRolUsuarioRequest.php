@@ -17,12 +17,12 @@ class StoreRolUsuarioRequest extends FormRequest
 			'idUsuario' => [
 				'required',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 			'idRol' => [
 				'required',
 				'integer',
-				'exists:seguridad.rol,idRol',
+				'exists:pgsql.seguridad.rol,idRol',
 			],
 			'fechaRegistro' => [
 				'nullable',
