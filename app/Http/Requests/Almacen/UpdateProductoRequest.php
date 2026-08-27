@@ -13,7 +13,7 @@ class UpdateProductoRequest extends FormRequest
 			'idUnidadMedida' => [
 				'required',
 				'integer',
-				'exists:almacen.unidadMedida,idUnidadMedida',
+				'exists:pgsql.almacen.unidadMedida,idUnidadMedida',
 			],
 			'descripcion' => [
 				'required',
@@ -32,7 +32,7 @@ class UpdateProductoRequest extends FormRequest
 			'idUsuarioRegistro' => [
 				'required',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 			'fechaBaja' => [
 				'nullable',
@@ -41,7 +41,7 @@ class UpdateProductoRequest extends FormRequest
 			'IdUsuarioBaja' => [
 				'nullable',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 			'activo' => [
 				'nullable',

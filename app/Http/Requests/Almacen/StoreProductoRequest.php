@@ -13,7 +13,7 @@ class StoreProductoRequest extends FormRequest
 			'idUnidadMedida' => [
 				'required',
 				'integer',
-				'exists:almacen.unidadMedida,idUnidadMedida',
+				'exists:pgsql.almacen.unidadMedida,idUnidadMedida',
 			],
 			'descripcion' => [
 				'required',
@@ -32,7 +32,7 @@ class StoreProductoRequest extends FormRequest
 			'idUsuarioRegistro' => [
 				'required',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 			'activo' => [
 				'nullable',

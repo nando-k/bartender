@@ -17,7 +17,7 @@ class StoreInventarioRequest extends FormRequest
 			'idProducto' => [
 				'required',
 				'integer',
-				'exists:almacen.producto,idProducto',
+				'exists:pgsql.almacen.producto,idProducto',
 			],
 
 			'precioUnitario' => [
@@ -46,7 +46,7 @@ class StoreInventarioRequest extends FormRequest
 			'idUsuarioRegistro' => [
 				'required',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 		];
 	}

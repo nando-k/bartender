@@ -13,7 +13,7 @@ class StoreProductoPresentacionRequest extends FormRequest
 			'idProducto' => [
 				'required',
 				'integer',
-				'exists:almacen.producto,idProducto',
+				'exists:pgsql.almacen.producto,idProducto',
 			],
 			'nombre' => [
 				'required',
@@ -42,7 +42,7 @@ class StoreProductoPresentacionRequest extends FormRequest
 			'idUsuarioRegistro' => [
 				'required',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 			'activo' => [
 				'nullable',

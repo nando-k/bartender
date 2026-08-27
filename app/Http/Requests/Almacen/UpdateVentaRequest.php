@@ -17,19 +17,19 @@ class UpdateVentaRequest extends FormRequest
 			'idInventario' => [
 				'required',
 				'integer',
-				'exists:almacen.inventario,idInventario',
+				'exists:pgsql.almacen.inventario,idInventario',
 			],
 
 			'idCliente' => [
 				'required',
 				'integer',
-				'exists:almacen.cliente,idCliente',
+				'exists:pgsql.almacen.cliente,idCliente',
 			],
 
 			'idTipo' => [
 				'required',
 				'integer',
-				'exists:parametro.detalle,idDetalle',
+				'exists:pgsql.parametro.detalle,idDetalle',
 			],
 
 			'total' => [
@@ -41,7 +41,7 @@ class UpdateVentaRequest extends FormRequest
 			'idEstado' => [
 				'required',
 				'integer',
-				'exists:parametro.detalle,idDetalle',
+				'exists:pgsql.parametro.detalle,idDetalle',
 			],
 
 			'fechaRegistro' => [
@@ -52,7 +52,7 @@ class UpdateVentaRequest extends FormRequest
 			'idUsuarioRegistro' => [
 				'required',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 
 			'fechaBaja' => [
@@ -63,7 +63,7 @@ class UpdateVentaRequest extends FormRequest
 			'IdUsuarioBaja' => [
 				'nullable',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 
 			'activo' => [

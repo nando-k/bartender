@@ -17,19 +17,19 @@ class StoreVentaRequest extends FormRequest
 			'idInventario' => [
 				'required',
 				'integer',
-				'exists:almacen.inventario,idInventario',
+				'exists:pgsql.almacen.inventario,idInventario',
 			],
 
 			'idCliente' => [
 				'required',
 				'integer',
-				'exists:almacen.cliente,idCliente',
+				'exists:pgsql.almacen.cliente,idCliente',
 			],
 
 			'idTipo' => [
 				'required',
 				'integer',
-				'exists:parametro.detalle,idDetalle',
+				'exists:pgsql.parametro.detalle,idDetalle',
 			],
 
 			'total' => [
@@ -41,7 +41,7 @@ class StoreVentaRequest extends FormRequest
 			'idEstado' => [
 				'required',
 				'integer',
-				'exists:parametro.detalle,idDetalle',
+				'exists:pgsql.parametro.detalle,idDetalle',
 			],
 
 			'fechaRegistro' => [
@@ -52,7 +52,7 @@ class StoreVentaRequest extends FormRequest
 			'idUsuarioRegistro' => [
 				'required',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 		];
 	}

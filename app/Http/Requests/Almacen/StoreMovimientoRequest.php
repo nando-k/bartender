@@ -17,13 +17,13 @@ class StoreMovimientoRequest extends FormRequest
 			'idInventario' => [
 				'required',
 				'integer',
-				'exists:almacen.inventario,idInventario',
+				'exists:pgsql.almacen.inventario,idInventario',
 			],
 
 			'idTipo' => [
 				'required',
 				'integer',
-				'exists:parametro.detalle,idDetalle',
+				'exists:pgsql.parametro.detalle,idDetalle',
 			],
 
 			'cantidad' => [
@@ -40,7 +40,7 @@ class StoreMovimientoRequest extends FormRequest
 			'idUsuarioRegistro' => [
 				'required',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 		];
 	}

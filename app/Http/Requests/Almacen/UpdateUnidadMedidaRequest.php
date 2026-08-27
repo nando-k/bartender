@@ -32,7 +32,7 @@ class UpdateUnidadMedidaRequest extends FormRequest
 			'idUsuarioRegistro' => [
 				'required',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 			'fechaBaja' => [
 				'nullable',
@@ -41,7 +41,7 @@ class UpdateUnidadMedidaRequest extends FormRequest
 			'IdUsuarioBaja' => [
 				'nullable',
 				'integer',
-				'exists:seguridad.usuario,idUsuario',
+				'exists:pgsql.seguridad.usuario,idUsuario',
 			],
 			'activo' => [
 				'nullable',
